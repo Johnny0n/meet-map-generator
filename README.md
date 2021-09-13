@@ -1,6 +1,6 @@
 # meet-map-finder
 
-> A Vue.js project
+> A meet-map finder with generate img with same custom mark and label :#
 
 ## Build Setup
 
