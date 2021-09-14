@@ -1,12 +1,18 @@
 # meet-map-finder
 
-> A Vue.js project
+> A Vue.js meet-map generator
 
 ## Build Setup
 
 ``` bash
+#requirements
+api google, pay console.cloud.google, for access :)
+
 # install dependencies
 npm install
+
+# install axios //easyer fetch json data, and display errors
+npm install axios
 
 # serve with hot reload at localhost:8080
 npm run dev
