@@ -92,7 +92,7 @@ export default {
           lat +
           "," +
           long +
-          "&key=AIzaSyAmesj1R0vzu-A53v6IXxy_s8a0vctT0SA"
+          "&key=API_KEY"
         )
         .then((response) => {
           if (response.data.error_message) {
