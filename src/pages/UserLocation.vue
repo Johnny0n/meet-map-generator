@@ -92,7 +92,7 @@ export default {
           lat +
           "," +
           long +
-          "&key=_YOUR_API_KEY"
+          "&key=API_KEY"
         )
         .then((response) => {
           if (response.data.error_message) {
@@ -116,7 +116,8 @@ export default {
       var map = new google.maps.Map(this.$refs["map"], {
         zoom: 15,
         center: new google.maps.LatLng(latitude, longitude),
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapId:'map_id',
+        backgroundColor: 'hsla(0, 0%, 0%, 0)', //transparent
       });
 
       new google.maps.Marker({
@@ -128,10 +129,12 @@ export default {
         keyboardShortcuts: false,
         disableDoubleClickZoom: true,
         noClear: true,
+        backgroundColor: 'hsla(0, 0%, 0%, 0)', //transparent
         // icon: 'http://meet-map.jspace.pl/love-pink.png',
-        icon: 'http://meet-map.jspace.pl/love-blue.png',
+        // icon: 'http://meet-map.jspace.pl/love-blue.png',
         // icon: 'http://meet-map.jspace.pl/love-black.png',
         // icon: 'http://meet-map.jspace.pl/love-green.png',
+        icon: 'http://meet-map.jspace.pl/love.png',
       });
 
     },
@@ -178,6 +181,10 @@ export default {
 
 .pac-item-query {
   font-size: 16px;
+}
+/*google options on map*/
+.gmnoprint,.gm-style-cc{
+  display: none !important;
 }
 </style>
 
