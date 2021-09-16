@@ -1,10 +1,8 @@
 # meet-map-finder
 
-<<<<<<< HEAD
-> A Vue.js meet-map generator
-=======
-> A meet-map finder with generate img with same custom mark and label :#
->>>>>>> 1cbfeb2f995d2937bc9c61f789868bea45e4ac45
+
+A meet-map finder with generate img with same custom mark and label :#
+
 
 ## Build Setup
 

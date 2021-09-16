@@ -2,7 +2,7 @@
   <div>
     <section class="ui one column centered grid map-second ">
       <div class="column ">
-        <form class="ui segment large form " >
+        <form class="ui segment large form">
           <div class="ui message red" v-show="error">{{error}}</div>
           <div class="ui segment">
             <div class="field">
@@ -92,7 +92,7 @@ export default {
           lat +
           "," +
           long +
-          "&key=API_KEY"
+          "&key=_YOUR_API_KEY"
         )
         .then((response) => {
           if (response.data.error_message) {
@@ -122,7 +122,18 @@ export default {
       new google.maps.Marker({
         position: new google.maps.LatLng(latitude, longitude),
         map: map,
+        title:'Test',
+        disableDefaultUI: true,
+        draggable: true,
+        keyboardShortcuts: false,
+        disableDoubleClickZoom: true,
+        noClear: true,
+        // icon: 'http://meet-map.jspace.pl/love-pink.png',
+        icon: 'http://meet-map.jspace.pl/love-blue.png',
+        // icon: 'http://meet-map.jspace.pl/love-black.png',
+        // icon: 'http://meet-map.jspace.pl/love-green.png',
       });
+
     },
   },
 };
