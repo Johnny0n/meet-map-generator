@@ -92,7 +92,7 @@ export default {
           lat +
           "," +
           long +
-          "&key=API_KEY"
+          "&key=APi_key"
         )
         .then((response) => {
           if (response.data.error_message) {
@@ -116,25 +116,36 @@ export default {
       var map = new google.maps.Map(this.$refs["map"], {
         zoom: 15,
         center: new google.maps.LatLng(latitude, longitude),
-        mapId:'map_id',
+        mapId:'mapID',
         backgroundColor: 'hsla(0, 0%, 0%, 0)', //transparent
       });
 
       new google.maps.Marker({
         position: new google.maps.LatLng(latitude, longitude),
         map: map,
-        title:'Test',
+        label: {
+          // text: "Tester",
+          color: "#4682B4",
+          fontSize: "30px",
+          fontWeight: "bold",
+          labelClass: "labels",
+          labelStyle: {opacity: 0.50},
+          raiseOnDrag: true,
+        },
         disableDefaultUI: true,
+        raiseOnDrag: true,
         draggable: true,
         keyboardShortcuts: false,
         disableDoubleClickZoom: true,
         noClear: true,
         backgroundColor: 'hsla(0, 0%, 0%, 0)', //transparent
-        // icon: 'http://meet-map.jspace.pl/love-pink.png',
+        // icon: 'http://meet-map.jspace.pl/love.png',
+        icon: 'http://meet-map.jspace.pl/love-white.png',
         // icon: 'http://meet-map.jspace.pl/love-blue.png',
-        // icon: 'http://meet-map.jspace.pl/love-black.png',
+        // icon: 'http://meet-map.jspace.pl/love-magenta.png',
         // icon: 'http://meet-map.jspace.pl/love-green.png',
-        icon: 'http://meet-map.jspace.pl/love.png',
+        // icon: 'http://meet-map.jspace.pl/love-red.png',
+        // icon: 'http://meet-map.jspace.pl/love-yellow.png',
       });
 
     },
@@ -162,6 +173,17 @@ export default {
 .map-second{
   position: relative;
   z-index: 1;
+}
+/*Label map*/
+
+.labels {
+  color: white !important;
+  background-color: red;
+  font-family: "Lucida Grande", "Arial", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  width: 10px;
+  white-space: nowrap;
 }
 
 /*Drop down google*/

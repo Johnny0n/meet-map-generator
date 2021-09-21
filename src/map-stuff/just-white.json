@@ -1,0 +1,130 @@
+##link
+
+https: //maps.googleapis.com/maps/api/staticmap?key=YOUR_API_KEY&center=35.7484165192747,-96.49374046163571&zoom=6&format=png&maptype=roadmap&style=element:labels.icon%7Cvisibility:on&style=element:labels.text%7Cvisibility:on&style=element:labels.text.fill%7Ccolor:0x000000&style=element:labels.text.stroke%7Ccolor:0xffffff&style=feature:administrative%7Cvisibility:off&style=feature:administrative%7Celement:geometry%7Cvisibility:off&style=feature:landscape%7Ccolor:0xffffff&style=feature:poi%7Cvisibility:off&style=feature:road%7Cweight:8&style=feature:road%7Celement:geometry.fill%7Ccolor:0x000000%7Cweight:8&style=feature:road%7Celement:geometry.stroke%7Ccolor:0x000000%7Cweight:0.8&style=feature:road%7Celement:labels.icon%7Cvisibility:off&style=feature:transit%7Cvisibility:off&style=feature:water%7Cvisibility:off&size=480x360
+
+##Json
+
+[
+{
+"elementType": "labels.icon",
+"stylers": [
+{
+"visibility": "on"
+}
+]
+},
+{
+"elementType": "labels.text",
+"stylers": [
+{
+"visibility": "on"
+}
+]
+},
+{
+"elementType": "labels.text.fill",
+"stylers": [
+{
+"color": "#000000"
+}
+]
+},
+{
+"elementType": "labels.text.stroke",
+"stylers": [
+{
+"color": "#ffffff"
+}
+]
+},
+{
+"featureType": "administrative",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "administrative",
+"elementType": "geometry",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "landscape",
+"stylers": [
+{
+"color": "#ffffff"
+}
+]
+},
+{
+"featureType": "poi",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "road",
+"stylers": [
+{
+"weight": 8
+}
+]
+},
+{
+"featureType": "road",
+"elementType": "geometry.fill",
+"stylers": [
+{
+"color": "#000000"
+},
+{
+"weight": 8
+}
+]
+},
+{
+"featureType": "road",
+"elementType": "geometry.stroke",
+"stylers": [
+{
+"color": "#000000"
+},
+{
+"weight": 0.8
+}
+]
+},
+{
+"featureType": "road",
+"elementType": "labels.icon",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "transit",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "water",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+}
+]

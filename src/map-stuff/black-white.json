@@ -1,0 +1,356 @@
+## json
+
+[
+{
+"featureType": "administrative",
+"elementType": "labels",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "administrative",
+"elementType": "labels.text.fill",
+"stylers": [
+{
+"color": "#444444"
+}
+]
+},
+{
+"featureType": "administrative.country",
+"elementType": "labels",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "administrative.country",
+"elementType": "labels.text",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "administrative.locality",
+"elementType": "labels",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "administrative.neighborhood",
+"elementType": "labels",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "administrative.province",
+"elementType": "labels",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "landscape",
+"stylers": [
+{
+"color": "#f2f2f2"
+},
+{
+"visibility": "simplified"
+}
+]
+},
+{
+"featureType": "landscape",
+"elementType": "geometry.fill",
+"stylers": [
+{
+"color": "#000000"
+}
+]
+},
+{
+"featureType": "landscape",
+"elementType": "labels.text",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "landscape.man_made",
+"elementType": "labels",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "landscape.man_made",
+"elementType": "labels.text",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "landscape.natural",
+"elementType": "labels",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "poi",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "poi",
+"elementType": "labels.icon",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "poi.attraction",
+"elementType": "labels",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "poi.attraction",
+"elementType": "labels.text",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "poi.business",
+"elementType": "labels",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "poi.business",
+"elementType": "labels.text",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "poi.government",
+"elementType": "labels",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "poi.government",
+"elementType": "labels.icon",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "poi.government",
+"elementType": "labels.text",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "poi.medical",
+"elementType": "labels.icon",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "road",
+"stylers": [
+{
+"saturation": -100
+},
+{
+"lightness": 45
+}
+]
+},
+{
+"featureType": "road",
+"elementType": "labels.icon",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "road",
+"elementType": "labels.text",
+"stylers": [
+{
+"color": "#000000"
+},
+{
+"weight": 8
+}
+]
+},
+{
+"featureType": "road",
+"elementType": "labels.text.fill",
+"stylers": [
+{
+"color": "#ffffff"
+}
+]
+},
+{
+"featureType": "road.arterial",
+"elementType": "labels.icon",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "road.highway",
+"stylers": [
+{
+"visibility": "simplified"
+}
+]
+},
+{
+"featureType": "road.highway",
+"elementType": "labels.icon",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "road.highway",
+"elementType": "labels.text",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "road.highway.controlled_access",
+"elementType": "labels.text",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "transit",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "transit",
+"elementType": "labels.text",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "transit.station",
+"elementType": "labels.text",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "water",
+"stylers": [
+{
+"color": "#2e7a9a"
+},
+{
+"visibility": "on"
+}
+]
+},
+{
+"featureType": "water",
+"elementType": "geometry",
+"stylers": [
+{
+"color": "#ffffff"
+}
+]
+},
+{
+"featureType": "water",
+"elementType": "labels",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+}
+]
+
+# STATIC MAP
+
+https://maps.googleapis.com/maps/api/staticmap?key=YOUR_API_KEY&center=47.685656379646154,-122.36779959498625&zoom=15&format=png&maptype=roadmap&style=feature:administrative%7Celement:labels%7Cvisibility:off&style=feature:administrative%7Celement:labels.text.fill%7Ccolor:0x444444&style=feature:administrative.country%7Celement:labels%7Cvisibility:off&style=feature:administrative.country%7Celement:labels.text%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels%7Cvisibility:off&style=feature:administrative.neighborhood%7Celement:labels%7Cvisibility:off&style=feature:administrative.province%7Celement:labels%7Cvisibility:off&style=feature:landscape%7Ccolor:0xf2f2f2%7Cvisibility:simplified&style=feature:landscape%7Celement:geometry.fill%7Ccolor:0x000000&style=feature:landscape%7Celement:labels.text%7Cvisibility:off&style=feature:landscape.man_made%7Celement:labels%7Cvisibility:off&style=feature:landscape.man_made%7Celement:labels.text%7Cvisibility:off&style=feature:landscape.natural%7Celement:labels%7Cvisibility:off&style=feature:poi%7Cvisibility:off&style=feature:poi%7Celement:labels.icon%7Cvisibility:off&style=feature:poi.attraction%7Celement:labels%7Cvisibility:off&style=feature:poi.attraction%7Celement:labels.text%7Cvisibility:off&style=feature:poi.business%7Celement:labels%7Cvisibility:off&style=feature:poi.business%7Celement:labels.text%7Cvisibility:off&style=feature:poi.government%7Celement:labels%7Cvisibility:off&style=feature:poi.government%7Celement:labels.icon%7Cvisibility:off&style=feature:poi.government%7Celement:labels.text%7Cvisibility:off&style=feature:poi.medical%7Celement:labels.icon%7Cvisibility:off&style=feature:road%7Csaturation:-100%7Clightness:45&style=feature:road%7Celement:labels.icon%7Cvisibility:off&style=feature:road%7Celement:labels.text%7Ccolor:0x000000%7Cweight:8&style=feature:road%7Celement:labels.text.fill%7Ccolor:0xffffff&style=feature:road.arterial%7Celement:labels.icon%7Cvisibility:off&style=feature:road.highway%7Cvisibility:simplified&style=feature:road.highway%7Celement:labels.icon%7Cvisibility:off&style=feature:road.highway%7Celement:labels.text%7Cvisibility:off&style=feature:road.highway.controlled_access%7Celement:labels.text%7Cvisibility:off&style=feature:transit%7Cvisibility:off&style=feature:transit%7Celement:labels.text%7Cvisibility:off&style=feature:transit.station%7Celement:labels.text%7Cvisibility:off&style=feature:water%7Ccolor:0x2e7a9a%7Cvisibility:on&style=feature:water%7Celement:geometry%7Ccolor:0xffffff&style=feature:water%7Celement:labels%7Cvisibility:off&size=480x360
