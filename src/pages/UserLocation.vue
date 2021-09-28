@@ -19,7 +19,14 @@
             <div class="centered">
               <button class="ui button">Go</button>
             </div>
+
           </div>
+          <input
+            type="text"
+            placeholder="Type your couple inicials"
+            @input="locatorButtonPressed()"
+            v-model="initials"
+          />
         </form>
       </div>
     </section>
@@ -35,6 +42,7 @@ export default {
   data() {
     return {
       address: "",
+      initials:"Type your Initials",
       error: "",
       spinner: false,
     };
@@ -92,7 +100,7 @@ export default {
           lat +
           "," +
           long +
-          "&key=APi_key"
+          "&key=Apikey"
         )
         .then((response) => {
           if (response.data.error_message) {
@@ -116,21 +124,22 @@ export default {
       var map = new google.maps.Map(this.$refs["map"], {
         zoom: 15,
         center: new google.maps.LatLng(latitude, longitude),
-        mapId:'mapID',
+        mapId:'map_key',
         backgroundColor: 'hsla(0, 0%, 0%, 0)', //transparent
       });
 
       new google.maps.Marker({
+
         position: new google.maps.LatLng(latitude, longitude),
         map: map,
         label: {
-          // text: "Tester",
+          text: this.initials,
           color: "#4682B4",
           fontSize: "30px",
           fontWeight: "bold",
-          labelClass: "labels",
           labelStyle: {opacity: 0.50},
           raiseOnDrag: true,
+          className: 'marker-position',
         },
         disableDefaultUI: true,
         raiseOnDrag: true,
@@ -140,8 +149,8 @@ export default {
         noClear: true,
         backgroundColor: 'hsla(0, 0%, 0%, 0)', //transparent
         // icon: 'http://meet-map.jspace.pl/love.png',
-        icon: 'http://meet-map.jspace.pl/love-white.png',
-        // icon: 'http://meet-map.jspace.pl/love-blue.png',
+        // icon: 'http://meet-map.jspace.pl/love-white-big.png',
+        icon: 'http://meet-map.jspace.pl/love-blue-big.png',
         // icon: 'http://meet-map.jspace.pl/love-magenta.png',
         // icon: 'http://meet-map.jspace.pl/love-green.png',
         // icon: 'http://meet-map.jspace.pl/love-red.png',
@@ -174,16 +183,17 @@ export default {
   position: relative;
   z-index: 1;
 }
-/*Label map*/
 
-.labels {
-  color: white !important;
-  background-color: red;
-  font-family: "Lucida Grande", "Arial", sans-serif;
-  font-size: 10px;
-  text-align: center;
-  width: 10px;
+/*Marker*/
+
+.marker-position {
+  bottom: -2em;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.8);
+  position: relative;
   white-space: nowrap;
+  padding: 5px;
+  text-shadow: 4px 4px 2px rgba(256,256,256,0.2);
 }
 
 /*Drop down google*/
